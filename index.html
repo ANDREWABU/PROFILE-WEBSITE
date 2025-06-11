@@ -1,0 +1,92 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my first web page</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        text-align: center;
+      }
+      nav {
+        background-color: rgba(236, 245, 241, 0.105);
+        padding: 20px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+        padding: 5px;
+      }
+      nav ul li a.active {
+        border-bottom: 2px solid black;
+      }
+      .container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+      .profile-pic {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 12px;
+      }
+      h1 {
+        margin-top: 30px;
+      }
+      p {
+        color: #444;
+        line-height: 1.6;
+        font-size: 1.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="proj.html ">Projects</a></li>
+        <li><a href="index.html" class="active">About</a></li>
+        <li><a href="exper.html">Expereince </a></li>
+        <li><a href="res.html">Resume</a></li>
+        <li><a href="con.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <img
+        src="images/andy.jpg"
+        alt="An image of Andy Abu"
+        class="profile-pic"
+      />
+
+      <h1>Andy Abu</h1>
+      <p>
+        I am currently a Computer Science student at Wilfrid Laurier University
+        in Ontario, Canada. I'm super passionate about how technology works and
+        love exploring new concepts in programming and development. Outside of
+        class, you’ll catch me coding personal projects, hooping on the
+        basketball court 🏀, or learning new tech just for fun. I'm always open
+        to connecting, collaborating, or just chatting about anything CS,
+        sports, or life. Let's build something awesome together 💻✨
+      </p>
+    </div>
+  </body>
+</html>
