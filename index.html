@@ -5,19 +5,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my first web page</title>
+    <style>
+      
+    </style>
+  </head>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav>
+      <div class="logo">Uma Abu</div>
       <ul>
-        <li><a href="#about">About</a></li>
+        <li><a href="#youtube">YouTube</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
     <section id="about" class="section-full">
       <div class="about-content">
         <img
@@ -27,31 +32,162 @@
         />
         <h1>Andy Abu</h1>
         <p>
-          I am currently a Computer Science student at Wilfrid Laurier University
-          in Ontario, Canada. I'm super passionate about how technology works and
-          love exploring new concepts in programming and development. Outside of
-          class, you'll catch me coding personal projects, hooping on the
-          basketball court 🏀, or learning new tech just for fun. I'm always open
-          to connecting, collaborating, or just chatting about anything CS,
-          sports, or life. Let's build something awesome together 💻✨
+          I am currently a Computer Science student at Wilfrid Laurier
+          University in Ontario, Canada. I'm super passionate about how
+          technology works and love exploring new concepts in programming and
+          development. Outside of class, you'll catch me coding personal
+          projects, hooping on the basketball court 🏀, or learning new tech
+          just for fun. I'm always open to connecting, collaborating, or just
+          chatting about anything CS, sports, or life. Let's build something
+          awesome together 💻✨
         </p>
       </div>
     </section>
 
-    <section id="projects" class="section-full">
-      <h1>Projects</h1>
-    </section>
-
     <section id="experience" class="section-full">
       <h1>Work Experience</h1>
+    
+      <div class="job">
+        <div class="left">
+          <h2>Customer Service Rep & Ride Attendant</h2>
+          <p class="company">Santas Village Azoosment Park – Bracebridge, ON</p>
+          <ul>
+            <li>Used ride systems & ticketing software to boost guest experience.</li>
+            <li>Resolved customer concerns with real-time problem-solving.</li>
+            <li>Worked with teams to improve park-wide coordination.</li>
+            <li>Kept accurate digital ride logs for safety audits.</li>
+            <li>Enhanced customer satisfaction with quick responses.</li>
+          </ul>
+        </div>
+        <div class="right">
+          <p class="date">May 2025 – Sept 2025</p>
+        </div>
+      </div>
+    
+      <div class="job">
+        <div class="left">
+          <h2>Administrative Support Assistant</h2>
+          <p class="company">Zenith Bank – Nigeria</p>
+          <ul>
+            <li>Supported bank operations and managed organized filing systems.</li>
+            <li>Prepared reports and documentation for meetings.</li>
+            <li>Handled 80+ customer calls, emails, and faxes daily.</li>
+            <li>Helped with audits and daily banking transactions.</li>
+          </ul>
+        </div>
+        <div class="right">
+          <p class="date">June 2023 – May 2024</p>
+        </div>
+      </div>
+    
+      <div class="job">
+        <div class="left">
+          <h2>Hotel & ICT Department Supervisor</h2>
+          <p class="company">Country Home Hotel – Nigeria</p>
+          <ul>
+            <li>Supervised hotel operations and improved service quality.</li>
+            <li>Managed staff schedules and inventory control.</li>
+            <li>Led digital and operational projects across multiple hotels.</li>
+            <li>Recognized for boosting team efficiency and guest experience.</li>
+          </ul>
+        </div>
+        <div class="right">
+          <p class="date">Jan 2021 – Jan 2023</p>
+        </div>
+      </div>
+    
+      <h1>Education</h1>
+    
+      <div class="job">
+        <div class="left">
+          <h2>Bachelor of Science: Computer Science</h2>
+          <p class="company">Wilfrid Laurier University – Waterloo, ON</p>
+        </div>
+        <div class="right">
+          <p class="date">Expected August 2027</p>
+        </div>
+      </div>
+    
+      <div class="job">
+        <div class="left">
+          <h2>High School Diploma</h2>
+          <p class="company">Baptist High School – Jos, Nigeria</p>
+        </div>
+        <div class="right">
+          <p class="date">June 2021</p>
+        </div>
+      </div>
+    
+      <h1>Skills</h1>
+      <ul class="skills">
+        <li>Java, Python, HTML, CSS, JavaScript, GitHub</li>
+        <li>Microsoft Office, AutoCAD, MATLAB</li>
+        <li>Data analysis & reporting</li>
+        <li>Team leadership & communication</li>
+        <li>Daily operations & digital infrastructure management</li>
+      </ul>
+    
+      <h1>Volunteer</h1>
+      <p>Helped organize and run events for Wilfrid Laurier Student Union</p>
+    </section>
+
+
+    <section id="projects" class="section-full">
+      <h1> My Projects</h1>
+      <div class="project-card">
+        <div class="project-image" style="background-color: #e0f7fa; display: flex; align-items: center; justify-content: center;">
+          <img src="images/countdown.png" alt="Countdown Clock" style="width: 60%; padding: 20px;" />
+        </div>
+        <div class="project-content">
+          <h3>Countdown Clock</h3>
+          <p>A Python app that lets users set and track countdowns with a real-time timer display.</p>
+          <p class="project-tags">2024 · Python</p>
+        </div>
+      </div>
+      
+      
+      <div class="project-card">
+        <div class="project-image" style="background-color: #fce4ec; display: flex; align-items: center; justify-content: center;">
+          <img src="images/andy.jpg" alt="Tic Tac Toe Game" style="width: 60%; padding: 20px;" />
+        </div>
+        <div class="project-content">
+          <h3>Tic Tac Toe Game</h3>
+          <p>A two-player terminal-based game using Python logic and basic win conditions.</p>
+          <p class="project-tags">2024 · Python</p>
+        </div>
+      </div>
+      
+      
+      <div class="project-card">
+        <div class="project-image" style="background-color: #fff3e0; display: flex; align-items: center; justify-content: center;">
+          <img src="images/portfolio.png" alt="Personal Website" style="width: 60%; padding: 20px;" />
+        </div>
+        <div class="project-content">
+          <h3>Portfolio Website</h3>
+          <p>This website you're viewing! Designed and coded from scratch to showcase my work.</p>
+          <p class="project-tags">2025 · HTML, CSS, JavaScript</p>
+        </div>
+      </div>
     </section>
 
     <section id="resume" class="section-full">
-      <h1>Resume'</h1>
+      <h1>Resume</h1>
+      <p>You can download my resume below:</p>
+      <a href="RESUME/resume copy.jpg"download >Download Resume (PDF)</a>
     </section>
 
-    <section id="contact" class="section-full">
-      <h1>Contact</h1>
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, feel free to reach out through any of the methods below:</p>
+    
+      <ul class="contact-list">
+        <li><strong>Phone:</strong> <a href="tel:+13828893777">+1 (382) 889-3777</a></li>
+        <li><strong>Email:</strong> <a href="mailto:andyeabu@gmail.com">andyeabu@gmail.com</a></li>
+        <li><strong>School Email:</strong> <a href="mailto:abux3774@mylaurier.ca">abux3774@mylaurier.ca</a></li>
+        <li><strong>Instagram:</strong> <a href="https://instagram.com/an_dyabu" target="_blank">@an_dyabu</a></li>
+        <li><strong>Snapchat:</strong> <a href="https://www.snapchat.com/add/an_dyabu" target="_blank">@an_dyabu</a></li>
+      </ul>
     </section>
   </body>
 </html>
+ 

@@ -1,21 +1,25 @@
+/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
+/* Base styles */
 body {
   font-family: Arial, sans-serif;
+  background-color: #e3d5d5;
+  color: #420303;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  text-align: center;
 }
 
+/* Navbar */
 nav {
+  background-color: #060404;
   padding: 20px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -28,99 +32,141 @@ nav ul {
 }
 
 nav ul li a {
+  color: rgb(154, 27, 27);
   text-decoration: none;
-  color: #555;
-  font-weight: 500;
-  padding: 5px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background: #322c2c;
 }
 
 nav ul li a.active {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(154, 27, 27);
 }
 
-.container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
+/* Section wrapper */
+.section-full {
+  padding: 60px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Section headings */
+h1 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #420303;
+  text-align: left;
+}
+
+/* Job layout */
+.job {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #c00e0e;
+  padding-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.job .left {
+  max-width: 70%;
+}
+
+.job .right {
+  text-align: right;
+  color: #6f1a1a;
+  font-size: 0.95em;
+  min-width: 140px;
+}
+
+/* Job title and company */
+.job h2 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #520808;
+}
+
+.job .company {
+  font-weight: bold;
+  margin: 8px 0;
+  color: #8b0e0e;
+}
+
+.job ul {
+  padding-left: 18px;
+  margin: 10px 0;
+  color: #420303;
+}
+
+/* Skills section */
+.skills {
+  padding-left: 20px;
+}
+
+.skills li {
+  margin-bottom: 5px;
+}
+
+/* Name/title for nav or top */
+.name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 20px;
+  text-align: center;
+}
+.profile-container {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .profile-pic {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 12px;
+  width: 200%;
+  max-width: 500px;
+  border-radius: 20%;
+  border: 3px solid #921b1b;
+  /* Matches your red theme */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.contact-section {
+  background-color: #0e0e0e;
+  padding: 60px 20px;
+  text-align: center;
+  color: #ffffff;
 }
 
-h1 {
-  margin-top: 30px;
-  color: #333;
+.contact-section h2 {
+  color: #ff3f4f;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-p {
-  color: #444;
-  line-height: 1.6;
+.contact-section p {
   font-size: 1.1rem;
+  margin-bottom: 30px;
 }
 
-a {
-  text-decoration: none;
-  color: #171718;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.section-full {
-  min-height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+.contact-list {
+  list-style: none;
   padding: 0;
-  box-sizing: border-box;
-}
-
-section {
-  padding: 0;
-  margin: 0;
-}
-
-#about {
-  background-color: #f9f9f9;
-}
-
-#projects {
-  background-color: #e3f2fd;
-}
-
-#experience {
-  background-color: #fff3e0;
-}
-
-#resume {
-  background-color: #e8f5e9;
-}
-
-#contact {
-  background-color: #fce4ec;
-}
-
-.about-content {
-  width: 66vw;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
-  background: transparent;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left;
 }
 
-@media (max-width: 900px) {
-  .about-content {
-    width: 90vw;
-    max-width: 98vw;
-  }
-} 
+.contact-list li {
+  margin-bottom: 15px;
+}
+
+.contact-list strong {
+  color: #ffffff;
+}
+
+.contact-list .accent {
+  color: #ff3f4f;
+}
